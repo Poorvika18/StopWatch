@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@color/material_dynamic_neutral_variant10"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@drawable/bg_circle"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/time_view"
+            android:layout_width="312dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:text="00:00:00"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textAppearance="@android:style/TextAppearance.Large"
+            android:textSize="56sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+            <ImageButton
+                android:id="@+id/bt_start"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_play"
+                android:background="@android:color/transparent"
+                android:onClick="onClickStart"
+                />
+
+            <ImageButton
+                android:id="@+id/bt_stop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_stop"
+                android:onClick="onClickStop"
+                android:background="@android:color/transparent"
+                android:text="@string/stop"
+                />
+
+            <ImageButton
+                android:id="@+id/bt_reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_reset"
+                android:onClick="onClickReset"
+                android:background="@android:color/transparent"
+                android:text="@string/reset"
+                />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
